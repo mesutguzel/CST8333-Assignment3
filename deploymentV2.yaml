@@ -1,25 +1,4 @@
-apiVersion: apps/v2
-kind: Deployment
-metadata:
-  name: frontend
-  labels:
-    team: development
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: frontend
-  template:
-    metadata:
-      labels:
-        app: frontend
-    spec:
-      containers:
-      - name: solitarie
-        image: mesutguzel/cst8333:v2
-        ports:
-        - containerPort: 80
----
+
 # kubectl patch service blue-green-service -p '{"spec":{"selector":{"app":"green"}}}'
 
 apiVersion: apps/v1
