@@ -19,3 +19,4 @@ spec:
         image: mesutguzel/cst8333:v2
         ports:
         - containerPort: 80
+---
