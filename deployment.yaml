@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: solitarie
-        image: mesutguzel/solitaire
+        image: mesutguzel/cst8333
         ports:
         - containerPort: 80
